@@ -43,7 +43,7 @@ export default function VideoUpload() {
         formData.append('videos', new File([file], `original_${file.name}`, { type: file.type }));
         // link watermarked version to form 
 
-        // **** file.name is key please do not change
+        // **** file.name is key please do not change for upload
         formData.append('videos', new File([watermarkfile], `watermarked_${file.name}`, { type: 'video/*' }));
 
       });
@@ -102,3 +102,4 @@ export default function VideoUpload() {
 
 
 
+// watermark logo is located at public/watermark_logo.png
